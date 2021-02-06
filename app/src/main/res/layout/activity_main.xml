@@ -16,21 +16,23 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151"
+        app:layout_constraintVertical_bias="0.056"
         app:srcCompat="@drawable/meters_inch" />
 
     <EditText
         android:id="@+id/metersEditText"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="Enter In Meter"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/convertId"
@@ -47,12 +49,12 @@
         android:id="@+id/resultViewId"
         android:layout_width="165dp"
         android:layout_height="65dp"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/convertId"
-        app:layout_constraintVertical_bias="0.24"
+        app:layout_constraintVertical_bias="0.123"
         tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
