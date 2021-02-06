@@ -22,12 +22,22 @@ public class MainActivity extends AppCompatActivity {
         //call a handlers
         convertButton = (Button) findViewById(R.id.convertId);
         editText = (EditText) findViewById(R.id.metersEditText);
-        showText = (TextView) findViewById(R.id.inchTextViewId);
+        showText = (TextView) findViewById(R.id.resultViewId);
 
         convertButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Conversion Logic
+                double multiplier = 39.37;
+                double result = 0.0;
 
+                double meterValue = Double.parseDouble(editText.getText().toString());
+
+                result = multiplier*meterValue;
+
+                System.out.println("Result " + result);
+
+                showText.setText(Double.toString(result) +" inches");
             }
         });
     }
